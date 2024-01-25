@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Form</title>
+    <link rel="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
+    <link rel="icon" href="//www.giet.edu/wp-content/uploads/2020/08/University-Logo-backup.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+</head>
+<style>
+   h2{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url(https://i.pinimg.com/736x/57/f3/e9/57f3e9e3e44ee521ed74234c0dbb8e46.jpg);
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration-container {
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 0 5px 5px royalblue;
+}
+
+.registration-container h2 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.registration-container h2::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 2px;
+    width: 32%;
+    border-radius: 5px;
+    background-color:rgb(1, 4, 12);
+}
+.three-details-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+hr {
+    width: 70%;
+    height: 1px;
+    background-color: #d2d2d2;
+    margin: 1rem 0;
+    border: none;
+}
+
+.personal-details,
+.identity-details {
+    margin: .2rem 0;
+}
+
+.personal-details label,
+.identity-details label {
+    margin: .5rem 1rem;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.three-details-item input {
+    outline: none;
+    font-size: .8rem;
+    border-radius: .2rem;
+    border: 1px solid rgb(113, 101, 101);
+    padding: .1rem;
+    background-color: transparent;
+}
+
+.submit-btn {
+    border: none;
+    background-color:royalblue;
+    color: white;
+    padding: .3rem 1rem;
+    display: block;
+    width: 50%;
+    margin: .6rem auto;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+}
+img{
+ height: 100px;
+ width: 100px;
+ right:50%;
+ margin-left: 50%;
+ margin-bottom: 5%;
+ padding-right: 5px;
+ }
+ font{
+    font-family:'Teko', sans-serif ;
+ }
+</style>
+<body>
+    <h2> 
+    
+        <section class="registration-container">
+            <center>
+                <font color="royalblue"  size="22" align=" left">
+                    <u>
+                     GIET University,Gunpur
+                    </u>
+                </font>
+            </center>
+            <h2> Leave Application Form </h2>
+            <section class="details-section">
+                <form action="-----" class="registration-form">
+                    <h4> <u>Personal Details</u><hr> </h4>
+                    <section class="personal-details">
+                        <div class="three-details-item">
+                            <label for="name">
+                                <p>Full Name</p>
+                                <input type="text" name="name" id="name" placeholder="Enter your name">
+                            </label>
+                            <label for="fAtte">
+                                <p>Attendence(in percent)</p>
+                                <input type="text" name="fAtte" id="fAtte" placeholder="Attendence">
+                            </label>
+                            <label for="SName">
+                                <p>Section</p>
+                                <input type="text" name="SName" id="SName" placeholder="Enter Section">
+                            </label>
+                        </div>
+                        <div class="three-details-item">
+                            <label for="From date">
+                                <p>from</p>
+                                <input type="date" name="" id="DTE">
+                            </label>
+                            <label for="to date">
+                                <p>To</p>
+                                <input type="date" name="to date" id="date">
+                            </label>
+                            <label for="Days">
+                                <p>No.of Days</p>
+                                <input type="number" name="nod" id="email" placeholder="Enter No.of Days">
+                            </label>
+                        </div>
+                        <div class="three-details-item">
+                            <label for="ph">
+                                <p> Student Mobile Number</p>
+                                <input type="tel" name="phone" id="ph" 
+                                placeholder="Enter Student mobile number">
+                            </label>
+    
+                            <label for="pphone ">
+                                <p>Parents Phone Number</p>
+                                <input type="text" name="gender" id="gender" placeholder="Enter parents mobile number">
+                            </label>
+    
+                            <label for="hostel">
+                                <p>Name of Hostel</p>
+                                <input type="text" name="address" id="address" placeholder="Name of the hostel">
+                            </label>
+                            <label for="Semester">
+                                <p>Semester No</p>
+                                <input type="text" name="sem" id="sem" placeholder="Enter Semester number">
+                            </label>
+                        </div>
+                    </section>
+                    <hr>
+                    <section for="tarea">
+                    <label for="textarea"><u>Reason for applying leave:</u></label>
+                    <div>
+                        <textarea name="Reason" id="" cols="30" rows="5"></textarea>
+                    </div>
+                    </section>
+                    <h4> <u>Other Details</u> <hr></h4>
+                    <section class="identity-details">
+                        <div class="three-details-item">
+                           <label for="stream">
+                                <p>Wheather going out of Gunpur</p>
+                                <input type="checkbox" name="gnp" id="gnp">
+
+                            </label>
+                            <label for="p number">
+                                <p> Wheather parents informed<br>
+                                about the leave(by student)</p>
+                                <input type="checkbox" name="par" id="par">
+                            </label>
+                        </div>
+                        <h4><u>Proctor Section</u> <hr></h4>
+                        <div class="three-details-item">
+                            <label for="accNo">
+                                <p> Proctor Number</p>
+                                <input type="text" name="pn" id="pn" placeholder="Enter your proctor name">
+                            </label>
+                            <label for="pname">
+                                <p> Proctor Name </p>
+                                <input type="text" name="pname" id="pname" placeholder="Enter your Proctor number ">
+                            </label>
+                        </div>
+                    </section>
+                    <button class="submit-btn"> Submit </button>
+                </form>
+            </section>
+        </section>
+    </body>
+    
+    </html>
+</body>
+</html>

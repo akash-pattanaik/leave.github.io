@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap">
+      <link rel="icon" type="" href="https://www.giet.edu/wp-content/uploads/2020/08/University-Logo-backup.png">
+      
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+    </head>
+   <style>
+html,body{
+  height: 100%;
+}
+body{
+  display: grid;
+  place-items: center;
+  background:url(https://images.unsplash.com/photo-1614292253389-bd2c1f89cd0e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.content{
+  width: 330px;
+  padding: 40px 30px;
+  background:rgb(247, 247, 245);
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px rgb(72, 73, 75),
+               2px 2px 5px rgb(61, 62, 63);
+}
+.content .text{
+  font-size: 80px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  font-family:'Libre Barcode 128 Text', system-ui;;
+}
+.field{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.field:nth-child(2){
+  margin-top: 20px;
+}
+.field input{
+  height: 100%;
+  width: 100%;
+  padding-left: 45px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  background: #dde1e7;
+  border-style: solid;
+  border-color: rgb(241, 241, 241);
+  color: #595959;
+  border-radius: 25px;
+  box-shadow: inset 2px 2px 5px #BABECC,
+              inset -5px -5px 10px #ffffff73;
+}
+.field input:focus{
+  box-shadow: inset 1px 1px 2px #BABECC,
+              inset -1px -1px 2px #ffffff73;
+}
+.field span{
+  position: absolute;
+  color: #595959;
+  width: 50px;
+  line-height: 50px;
+}
+.field label{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 45px;
+  color: #666666;
+}
+button{
+  margin: 15px;
+  width: 25%;
+  height:50px;
+  font-size: 15px;
+  font-weight: 300;
+  border-radius: 10px;
+  cursor: pointer;
+  color:royalblue;
+  border-style: solid;
+  border-color: royalblue;
+}
+button:focus:hover{
+  background-color:  #00ac96;
+}
+   </style>
+   <script>
+    function validateEmail(email) {
+              var emailRegex = (/^[0-9a-z\._\-0-9][@][a-z]{4}[\][a-z]{3}$/);
+               return emailRegex.test(email);
+              }
+             var emailToValidate = "example@giet.edu";
+                if (validateEmail(emailToValidate)) {
+                 console.log("Email is valid!");
+                 return true;
+                } 
+                 else {
+                 console.log("Invalid email!");
+                 return flase;
+                }
+                
+   </script>
+   <body>
+
+      <div class="content">
+         <div class="text">
+          <font color="#8F0E0E">L</font>
+          <font color="#9650B4">O</font>
+          <font color="#0C757D">G</font>
+          <font color="#0F52BA">I</font>
+          <font color="#0A6331">N</font></div>
+          <hr> &nbsp;
+         <form action="form.html">
+            <div class="field">
+              <label id="email.label"></label>
+               <input type="email"  spellcheck="false" id="email.field" pattern="[0-9a-z._%+-]+@[giet]+\.[edu]$" required>
+               <span class="fas fa-user"></span>
+            </div>
+            
+            </script>
+            <div class="field">
+               <input type="password"  required>
+               <span class="fas fa-lock"></span>
+               <label></label>
+            </div>
+            
+           &nbsp;<hr>
+            
+            <button>Login</button>
+            
+            </div>
+         </form>
+      </div>
+   </body>
+</html>
